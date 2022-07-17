@@ -1,6 +1,6 @@
 # Expensive_planner
 
-A new Flutter project.
+It helps you know how much you spend in the week.
 
 ## Getting Started
 
