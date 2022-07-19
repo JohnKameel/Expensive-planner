@@ -31,20 +31,22 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Expensive Planner'),
       ),
-      body: Column(
-        //mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Card(
-            color: Colors.blue,
-            elevation: 5,
-            child: Container(
-              width: double.infinity,
-              child: Text('CHART'),
+      body: SingleChildScrollView(
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Card(
+              color: Colors.blue,
+              elevation: 5,
+              child: Container(
+                width: double.infinity,
+                child: Text('CHART'),
+              ),
             ),
-          ),
-          UserTransactions()
-        ],
+            UserTransactions()
+          ],
+        ),
       ),
     );
   }
