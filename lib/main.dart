@@ -5,6 +5,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/models/transaction.dart';
 import 'package:flutter_application_1/widgets/transaction_list.dart';
+import 'package:google_fonts/google_fonts.dart';
 import './widgets/new_transaction.dart';
 import './widgets/transaction_list.dart';
 import 'models/transaction.dart';
@@ -76,7 +77,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Expensive Planner'),
+        title: Text(
+          'Expensive Planner',
+          style: GoogleFonts.mochiyPopOne(
+            textStyle: TextStyle(
+              fontSize: 25,
+              color: Colors.amber,
+            ),
+          ),
+        ),
         actions: <Widget>[
           IconButton(
             onPressed: () => _startAddNewTransaction(context),
